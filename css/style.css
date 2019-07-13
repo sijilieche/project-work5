@@ -1,0 +1,353 @@
+.header {
+    height: 122px;
+    background-color: #efefef;
+    position: relative;
+    border-bottom: 2px solid rgb(36, 135, 201);
+    /* 头部区域下边框有2个像素的蓝色边框 */
+}
+
+.header .logo {
+    height: 122px;
+    line-height: 106px;
+    text-indent: 123px;
+    position: absolute;
+    left: 340px;
+}
+
+/* logo */
+.header .logo .header__logo {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    background: url('../img/logo.png') no-repeat left center;
+    cursor: pointer;
+}
+
+/* 头部左侧：慕课高铁客户服务中心 */
+.header .logo .logo_a1 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/* 头部左侧竖线 */
+.header .logo span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 头部左侧客户服务项 */
+.header .logo .logo_a2 {
+    color: #666;
+}
+
+/* 头部 右侧*/
+.header .headRight {
+    position: absolute;
+    right: 374px;
+    top: 50%;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+/* 头部有链接的 */
+.header .headRight a {
+    display: inline-block;
+    padding-right: 13px;
+}
+
+/* 头部的imooc@com和登录 */
+.header .headRight .headRight__website,
+.headRight__login {
+    font-weight: 500;
+    color: rgb(251, 116, 3);
+}
+
+/* 头部注册 */
+.header .headRight .headRight__register {
+    margin-left: 6px;
+}
+
+/* 头部手机版 */
+.header .headRight .phone {
+    height: 20px;
+    line-height: 20px;
+    text-indent: 17px;
+    margin-left: 45px;
+    background: url('../img/未标题-1.png') no-repeat left center;
+    background-size: contain;
+}
+
+/* 调整一下头部右侧的位置 */
+.header .headRight .wrapRight {
+    margin-right: 20px;
+}
+
+/* 设置我的IMOOC的高度，以达到满足条件：
+只有离开我的IMOOC以及下拉列表之后，
+下拉列表才会隐藏，不然两者之间会有高度空隙，
+导致鼠标划到空隙时也隐藏了下拉列表
+*/
+.header .headRight .wrapRight .imooc {
+    display: inline-block;
+    width: 93px;
+    height: 34px;
+}
+
+/* 头部的黑色箭头 */
+.arrow {
+    position: absolute;
+    right: 499px;
+    top: 50%;
+    margin-top: -1px;
+    width: 0;
+    height: 0;
+    border: 8px solid #000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/* “我的IMOOC”的下拉列表 */
+.spinner1 {
+    position: absolute;
+    z-index: 3;
+    right: 463px;
+    top: 84px;
+    padding: 10px;
+    width: 127px;
+    height: 326px;
+    border: 1px solid rgb(251, 116, 3);
+    background: #fff;
+    display: none;
+}
+
+.spinner1 div {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: rgb(125, 126, 129);
+}
+
+.spinner1 div:nth-child(2),
+.spinner1 div:nth-child(3),
+.spinner1 div:nth-child(5),
+.spinner1 div:nth-child(6),
+.spinner1 div:nth-child(8),
+.spinner1 div:nth-child(9) {
+    border-bottom: 1px dotted #666;
+}
+
+/* 主体 */
+.main {
+    height: 800px;
+}
+
+.main .mainWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 位置部分 */
+.main .mainWrap .main__location {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+}
+
+.main .mainWrap .main__location a,
+.main .mainWrap .main__location span {
+    color: #666;
+}
+
+.main .mainWrap .main__location .main__location_1 {
+    color: #000;
+    font-weight: 700;
+}
+
+/* 注册部分 */
+.main .mainWrap .main__register {
+    height: 628px;
+    border: 1px solid rgb(251, 116, 3);
+    border-radius: 5px;
+    position: relative;
+}
+
+/* 账户信息 */
+.main .mainWrap .main__register .main__headline {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 20px;
+    background: rgb(251, 116, 3);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* 注册项整体 */
+.main .mainWrap .main__register .main__form {
+    position: absolute;
+    top: 90px;
+    left: 280px;
+}
+
+/* 每一个注册项 */
+.main .mainWrap .main__register .main__form .main__formItem {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 登录密码后的 3个小方块*/
+.main .mainWrap .main__register .main__form .main__formItem .hint2 span {
+    display: inline-block;
+    width: 41px;
+    height: 7px;
+    vertical-align: middle;
+    background: #ddd;
+}
+
+/* 登录密码下面的提示 */
+.main .mainWrap .main__register .main__form .main__formItem #passwordHint {
+    width: 224px;
+    height: 20px;
+    margin-left: 93px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff0000;
+    display: none;
+}
+
+/* 默认登录密码后小方块第一块为红色 */
+.main .mainWrap .main__register .main__form .main__formItem .hint2 span:first-child {
+    background: #ff0000;
+}
+
+/* 对每个注册项一整行进行设置*/
+.main .mainWrap .main__register .main__form .main__formItem div {
+    margin-bottom: 15px;
+}
+
+/* 对每个注册项的输入框或者菜单进行设置 */
+.main .mainWrap .main__register .main__form .main__formItem div input,
+.main .mainWrap .main__register .main__form .main__formItem div select {
+    width: 220px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+/* 单独为注册项的菜单进行设置*/
+.main .mainWrap .main__register .main__form .main__formItem div select {
+    width: 224px;
+    height: 20px;
+}
+
+/* 选项后的提示内容 */
+.hint1,
+.hint4,
+.hint8 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(251, 116, 3);
+}
+
+/* 姓名
+给姓名提示文本框设置一个较大的宽度，以方便用户能编辑到文本提示框的内容，
+在姓名填写规则右边向下划动即可看到并编辑文本提示框
+*/
+.hint4 {
+    display: inline-block;
+    width: 200px;
+    text-decoration: underline;
+}
+
+/* 姓名填写规则文本 */
+#prompt {
+    position: absolute;
+    right: 9px;
+    top: 35%;
+    margin-top: -4px;
+    padding: 10px 0 0 15px;
+    width: 477px;
+    height: 278px;
+    line-height: 35px;
+    font-size: 12px;
+    border: 1px solid rgb(36, 135, 201);
+    color: rgb(108, 108, 121);
+    background: #fff;
+    display: none;
+}
+
+/* 对齐每个注册项 */
+.main .mainWrap .main__register .main__form .main__formItem .formItem {
+    display: inline-block;
+    width: 88px;
+    text-align-last: justify;
+}
+
+/* 设置一下邮箱前面的文字，使其对齐，好看一点 */
+.mailbox1 {
+    display: inline-block;
+}
+
+/* 条款 */
+.main__clause {
+    font-weight: bold;
+    position: absolute;
+    left: 92px;
+}
+
+.main__clause a {
+    color: rgb(36, 135, 201);
+}
+
+/* 下一步按钮 */
+.main__next {
+    width: 230px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    background: rgb(251, 116, 3);
+    border-radius: 5px;
+    bottom: -121px;
+    left: 117px;
+    cursor: auto;
+}
+
+/* 页脚 */
+.footer {
+    height: 100px;
+    background: #dcdcdc;
+    text-align: center;
+    position: relative;
+    border-top: 2px solid rgb(36, 135, 201);
+    /* 有一个2像素的蓝色上边框 */
+}
+
+/* 页脚字体颜色 */
+.footer a,
+.footer div,
+.footer span {
+    color: #a1a1b4;
+}
+
+.footer .footer__wrap {
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -50px;
+}
+
+.footer .footer__wrap .footer__aboutUs {
+    padding-top: 29px;
+    padding-bottom: 13px;
+}
+
+.footer span {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}

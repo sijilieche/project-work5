@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3-10job</title>
+    <!-- 引入两个css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <header class="header">
+            <!-- logo和客户服务项 -->
+            <div class="logo">
+                <div class="header__logo"></div>
+                <a href="javascript:;" class="logo_a1">慕课高铁客户服务中心</a>
+                <span>|</span>
+                <a href="javascript:;" class="logo_a2">客户服务</a>
+            </div>
+            <!-- 反馈邮箱、登录、注册、我的IMOOC以及手机版 -->
+            <div class="headRight">
+                <span class="wrapRight">
+                    <a href="javascript:;" class="headRight__feedback">意见反馈</a>
+                    <a href="javascript:;" class="headRight__website">imooc@com</a>
+                    您好，请&nbsp;<a href="javascript:;" class="headRight__login">登录</a>
+                    <span>|</span>
+                    <a href="javascript:;" class="headRight__register">注册</a>
+                    <span class="imooc">我的IMOOC</span>
+                </span>
+                <a href="javascript:;" class="phone">手机版</a>
+            </div>
+            <!-- 箭头 -->
+            <div class="arrow"></div>
+        </header>
+        <!-- 对应“我的IMOOC”对应下面的下拉菜单 -->
+        <div class="spinner1">
+            <div>未完成订单</div>
+            <div>已完成订单（改/退）</div>
+            <div>我的保险</div>
+            <div>查看个人信息</div>
+            <div>账户安全</div>
+            <div>常用联系人</div>
+            <div>重点旅客预约</div>
+            <div>遗失物品查找</div>
+            <div>服务查询</div>
+            <div>投诉</div>
+            <div>建议</div>
+        </div>
+        <!-- 主体 -->
+        <div class="main">
+            <div class="mainWrap">
+                <!-- 位置部分 -->
+                <div class="main__location"><span class="main__location_1">您现在的位置：</span><a href="javascript:;">客运首页</a>
+                    <span>&gt;</span>
+                    <a href="javascript:;">注册</a>
+                </div>
+                <!-- 注册部分 -->
+                <div class="main__register">
+                    <div class="main__headline">账户信息</div>
+                    <div class="main__form">
+                        <div class="main__formItem">
+                            <!-- 用户名 -->
+                            <div><span class="formItem"><span class="star">*</span>用户名：</span>
+                                <input id="username" type="text" placeholder="用户名设置成功后不可修改">
+                                <span class="hint1">6-30位字母、数字或"_"，字母开头</span>
+                            </div>
+                            <!-- 登录密码 -->
+                            <div><span class="formItem"><span class="star">*</span>登录密码：</span>
+                                <input id="loginPwd" type="password" placeholder="6-20位字母、数字或符号">
+                                <span class="hint2">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- 登录密码下面的提示 -->
+                            <div id="passwordHint">请输入6-20位字母、数字或符号</div>
+                            <!-- 确认密码 -->
+                            <div><span class="formItem"><span class="star">*</span>确认密码：</span>
+                                <input id="confirmPwd" type="password" placeholder="再次输入您的登录密码">
+                                <span class="hint3"></span>
+                            </div>
+                            <!-- 姓名 -->
+                            <div><span class="formItem"><span class="star">*</span>姓名：</span>
+                                <input id="name1" type="text" placeholder="请输入姓名">
+                                <span class="hint4">姓名填写规则</span>
+                            </div>
+                            <!-- 证件类型 -->
+                            <div><span class="formItem"><span class="star">*</span>证件类型：</span>
+                                <select name="" id="">
+                                    <!-- 证件类型，默认显示是二代身份证 -->
+                                    <option value="" selected>二代身份证</option>
+                                    <option value="">港澳通行证</option>
+                                    <option value="">台湾通行证</option>
+                                    <option value="">护照</option>
+                                </select>
+                                <span class="hint5"></span>
+                            </div>
+                            <!-- 证件号码 -->
+                            <div><span class="formItem"><span class="star">*</span>证件号码：</span>
+                                <input id="IDNumber" type="text" placeholder="请输入您的证件号码">
+                                <span class="hint6"></span>
+                            </div>
+                            <!-- 邮箱 -->
+                            <div><span class="formItem"><span class="mailbox1"></span>邮箱：</span>
+                                <input id="mailbox" type="text" placeholder="请正确填写邮箱地址">
+                                <span class="hint7"></span>
+                            </div>
+                            <!-- 手机号码 -->
+                            <div><span class="formItem"><span class="star">*</span>手机号码：</span>
+                                <input id="cellphoneNumber" type="text" placeholder="请输入您的手机号码">
+                                <span class="hint8">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span>
+                            </div>
+                            <!-- 旅客类型 -->
+                            <div><span class="formItem"><span class="star">*</span>旅客类型：</span>
+                                <select name="" id="">
+                                    <!-- 旅客类型默认显示是成人 -->
+                                    <option value="" selected>成人</option>
+                                    <option value="">儿童</option>
+                                    <option value="">学生</option>
+                                    <option value="">残疾军人</option>
+                                    <option value="">伤残人民警察</option>
+                                </select>
+                                <span class="hint9"></span>
+                            </div>
+                        </div>
+                        <!-- 条款 -->
+                        <div class="main__clause">
+                            <input type="checkbox" name="" id="clause">
+                            <span>我已阅读并同意遵守</span>
+                            <a href="javascript:;">《中国铁路客户服务中心网站服务条款》</a>
+                        </div>
+                        <!-- 下一步按钮 -->
+                        <div class="main__next">下一步</div>
+                    </div>
+                    <!-- 姓名填写规则提示文本框 -->
+                    <div id="prompt">1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。<br>
+                        2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉子的拼音或同音字重新修改后保存。<br>
+                        3.姓名中有繁体字无法输入时，可用简体替代。<br>
+                        4.姓名较长，汉字与英文字符合计超过30个（1个汉子算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不去别大小写</div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__aboutUs"><a href="javascript:;">关于我们</a><span>|</span><a
+                        href="javascript:;">网站声明</a>
+                </div>
+                <div class="footer__copyRight">Copyright &copy; 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- 引入js -->
+<script src="js/script.js"></script>
+
+</html>

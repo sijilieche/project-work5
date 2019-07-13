@@ -1,0 +1,29 @@
+/* 去掉默认边框，设置网页字体及字体颜色 */
+* {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-family: 'Microsoft YaHei';
+    /* 网页字体： Microsoft YaHei */
+}
+
+body {
+    min-width: 1200px;
+    /* 当页面缩小到1200px时，页面不再发生变化 */
+}
+
+/* 去掉默认下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 主体中  星形标示号*的颜色 */
+.star {
+    color: rgb(251, 116, 3);
+}
+
+/* 主体中  *后面的文字样式*/
+.formItem {
+    font-size: 14px;
+    font-weight: 600;
+}
